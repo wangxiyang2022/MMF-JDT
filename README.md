@@ -9,7 +9,7 @@ This is the offical implementation of the paper "[A Multi-Modal Fusion-Based 3D 
 Firstly, a new multi-object tracking framework is proposed in this paper based on multi-modal fusion. By integrating object detection and multi-object tracking into the same model, this framework avoids the complex data association process in the classical TBD paradigm, and requires no additional training. Secondly, confidence of historical trajectory regression is explored, possible states of a trajectory in the current frame (weak object or strong object) are analyzed and a confidence fusion module is designed to guide non-maximum suppression of trajectory and detection for ordered association. Finally, extensive experiments are conducted on the KITTI and Waymo datasets. The results show that the proposed method can achieve robust tracking by using only two modal detectors and it is more accurate than many of the latest TBD paradigm-based multi-modal tracking methods.
 
 ## Update
-* 2024-12-13: This paper has been accepted as a journal paper in Robotics and Automation Letters (RA-L).
+* **2024-12-13: This paper has been accepted as a journal paper in Robotics and Automation Letters (RA-L).**
 
 ## Overview
 - [Update log](#jump)
