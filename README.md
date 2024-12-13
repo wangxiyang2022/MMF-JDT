@@ -1,13 +1,15 @@
 [![Page Views Count](https://badges.toozhao.com/badges/01GY94BEY4RQCFS93XZSXWBWS1/green.svg)](https://badges.toozhao.com/stats/01GY94BEY4RQCFS93XZSXWBWS1 "Get your own page views count badge on badges.toozhao.com")
 
-#  You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking  
+#  A Multi-Modal Fusion-Based 3D Multi-Object Tracking Framework With Joint Detection
 
-This is the offical implementation of the paper "[You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking](https://arxiv.org/abs/2304.08709) "
+This is the offical implementation of the paper "[A Multi-Modal Fusion-Based 3D Multi-Object Tracking Framework With Joint Detection](https://ieeexplore.ieee.org/document/10777493?source=authoralert) "
 
 <img src="assets/Figure1.png" width="70%" height="70%" />
 
 Firstly, a new multi-object tracking framework is proposed in this paper based on multi-modal fusion. By integrating object detection and multi-object tracking into the same model, this framework avoids the complex data association process in the classical TBD paradigm, and requires no additional training. Secondly, confidence of historical trajectory regression is explored, possible states of a trajectory in the current frame (weak object or strong object) are analyzed and a confidence fusion module is designed to guide non-maximum suppression of trajectory and detection for ordered association. Finally, extensive experiments are conducted on the KITTI and Waymo datasets. The results show that the proposed method can achieve robust tracking by using only two modal detectors and it is more accurate than many of the latest TBD paradigm-based multi-modal tracking methods.
 
+## Update
+* 2024-12-13: This paper has been accepted as a journal paper in Robotics and Automation Letters (RA-L).
 
 ## Overview
 - [Update log](#jump)
@@ -232,12 +234,17 @@ This repo is developed from  [OpenPCDet](https://github.com/open-mmlab/OpenPCDet
 If you find this work useful, please consider to cite our paper:
 
 ```
-@article{wang2023you,
-  title={You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking},
-  author={Wang, Xiyang and He, Jiawei and Fu, Chunyun and Meng, Ting and Huang, Mingguang},
-  journal={arXiv preprint arXiv:2304.08709},
-  year={2023}
-}
+@ARTICLE{10777493,
+  author={Wang, Xiyang and Fu, Chunyun and He, Jiawei and Huang, Mingguang and Meng, Ting and Zhang, Siyu and Zhou, Hangning and Xu, Ziyao and Zhang, Chi},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={A Multi-Modal Fusion-Based 3D Multi-Object Tracking Framework With Joint Detection}, 
+  year={2025},
+  volume={10},
+  number={1},
+  pages={532-539},
+  keywords={Three-dimensional displays;Trajectory;Detectors;Object detection;Proposals;Feature extraction;Solid modeling;Data models;Point cloud compression;Kalman filters;3D MOT;Camera and LiDAR fusion;object detection and tracking},
+  doi={10.1109/LRA.2024.3511438}}
+
 
 ```
 
